@@ -1,0 +1,7 @@
+.actionScriptProperties
+.settings
+.flexLibProperties
+.project
+.bin
+*.swp
+/fp10/bin
