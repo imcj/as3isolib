@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report>
+  <swf size="135507" compressedSize="59425">
+
+    <!-- Header data (SWF attributes, product info, markers, etc.) -->
+    <headerData totalSize="405">
+      <data type="metaData" size="303"/>
+      <data type="productInfo" size="28"/>
+      <data type="swfHeader" size="21"/>
+      <data type="debugID" size="18"/>
+      <data type="enableDebugger" size="16"/>
+      <data type="fileAttributes" size="6"/>
+      <data type="scriptLimits" size="6"/>
+      <data type="backgroundColor" size="5"/>
+      <data type="endMarker" size="2"/>
+    </headerData>
+
+    <!-- Cumulative frame size summary. -->
+    <frames totalSize="135102">
+      <frame size="135102" frame="1"/>
+    </frames>
+
+    <!-- Actionscript code and constant data. -->
+    <actionScript totalSize="135003">
+      <abc name="as3isolib/display/IsoView" size="10341" frame="1"/>
+      <abc name="as3isolib/core/IsoDisplayObject" size="8126" frame="1"/>
+      <abc name="as3isolib/core/IsoContainer" size="5774" frame="1"/>
+      <abc name="eDpLib/events/EventDispatcherProxy" size="5521" frame="1"/>
+      <abc name="as3isolib/display/primitive/IsoHexBox" size="5135" frame="1"/>
+      <abc name="as3isolib/display/scene/IsoScene" size="4941" frame="1"/>
+      <abc name="as3isolib/display/primitive/IsoPrimitive" size="4527" frame="1"/>
+      <abc name="as3isolib/data/Node" size="4450" frame="1"/>
+      <abc name="as3isolib/core/IIsoDisplayObject" size="3969" frame="1"/>
+      <abc name="as3isolib/display/primitive/IsoBox" size="3946" frame="1"/>
+      <abc name="as3isolib/display/scene/IsoGrid" size="3691" frame="1"/>
+      <abc name="as3isolib/bounds/SceneBounds" size="3538" frame="1"/>
+      <abc name="as3isolib/utils/IsoDrawingUtil" size="3375" frame="1"/>
+      <abc name="as3isolib/graphics/BitmapFill" size="3206" frame="1"/>
+      <abc name="as3isolib/display/scene/IsoOrigin" size="3023" frame="1"/>
+      <abc name="as3isolib/display/IsoSprite" size="2703" frame="1"/>
+      <abc name="as3isolib/bounds/PrimitiveBounds" size="2648" frame="1"/>
+      <abc name="as3isolib/display/IIsoView" size="2625" frame="1"/>
+      <abc name="as3isolib/display/scene/IsoHexGrid" size="2507" frame="1"/>
+      <abc name="as3isolib/data/INode" size="2504" frame="1"/>
+      <abc name="as3isolib/display/IsoGroup" size="2488" frame="1"/>
+      <abc name="as3isolib/display/renderers/SceneBlittingRenderer" size="2388" frame="1"/>
+      <abc name="as3isolib/display/renderers/DefaultSceneLayoutRenderer" size="2326" frame="1"/>
+      <abc name="as3isolib/display/primitive/IsoPolygon" size="2193" frame="1"/>
+      <abc name="as3isolib/display/primitive/IIsoPrimitive" size="1857" frame="1"/>
+      <abc name="as3isolib/display/renderers/DefaultShadowRenderer" size="1765" frame="1"/>
+      <abc name="as3isolib/geom/Pt" size="1742" frame="1"/>
+      <abc name="as3isolib/display/renderers/ViewBoundsRenderer" size="1696" frame="1"/>
+      <abc name="as3isolib/display/renderers/DefaultViewRenderer" size="1652" frame="1"/>
+      <abc name="as3isolib/display/primitive/IsoRectangle" size="1627" frame="1"/>
+      <abc name="as3isolib/geom/transformations/DefaultIsometricTransformation" size="1550" frame="1"/>
+      <abc name="as3isolib/bounds/IBounds" size="1537" frame="1"/>
+      <abc name="as3isolib/display/renderers/SimpleSceneLayoutRenderer" size="1510" frame="1"/>
+      <abc name="as3isolib/display/scene/IIsoGrid" size="1479" frame="1"/>
+      <abc name="as3isolib/graphics/SolidColorFill" size="1311" frame="1"/>
+      <abc name="as3isolib/core/ClassFactory" size="1200" frame="1"/>
+      <abc name="as3isolib/geom/IsoMath" size="1199" frame="1"/>
+      <abc name="_46fc80f7b4dd6ce556c7edb0bf8ac8a88ea35a79632110ef156673a41a70df81_flash_display_Sprite" size="1192" frame="1"/>
+      <abc name="as3isolib/geom/transformations/IsometricTransformation" size="1182" frame="1"/>
+      <abc name="as3isolib/events/IsoEvent" size="1154" frame="1"/>
+      <abc name="as3isolib/core/IIsoContainer" size="1096" frame="1"/>
+      <abc name="eDpLib/events/ListenerHash" size="1017" frame="1"/>
+      <abc name="as3isolib/graphics/Stroke" size="969" frame="1"/>
+      <abc name="as3isolib/display/scene/IIsoScene" size="964" frame="1"/>
+      <abc name="as3isolib/geom/transformations/DimetricTransformation" size="951" frame="1"/>
+      <abc name="eDpLib/events/ProxyEvent" size="928" frame="1"/>
+      <abc name="eDpLib/events/IEventDispatcherProxy" size="876" frame="1"/>
+      <abc name="as3isolib/geom/transformations/IAxonometricTransformation" size="868" frame="1"/>
+      <abc name="as3isolib/graphics/IBitmapFill" size="792" frame="1"/>
+      <abc name="as3isolib/display/renderers/ISceneLayoutRenderer" size="787" frame="1"/>
+      <abc name="as3isolib/enum/IsoOrientation" size="736" frame="1"/>
+      <abc name="as3isolib/core/EventListenerDescriptor" size="616" frame="1"/>
+      <abc name="as3isolib/graphics/IFill" size="601" frame="1"/>
+      <abc name="as3isolib/display/renderers/ISceneRenderer" size="592" frame="1"/>
+      <abc name="as3isolib/enum/RenderStyleType" size="575" frame="1"/>
+      <abc name="as3isolib/display/renderers/IViewRenderer" size="574" frame="1"/>
+      <abc name="as3isolib/errors/IsoError" size="516" frame="1"/>
+      <abc name="as3isolib/data/RenderData" size="472" frame="1"/>
+      <abc name="as3isolib/core/IInvalidation" size="457" frame="1"/>
+      <abc name="as3isolib/graphics/IStroke" size="451" frame="1"/>
+      <abc name="as3isolib/core/IFactory" size="332" frame="1"/>
+      <abc name="as3isolib/core/as3isolib_internal" size="235" frame="1"/>
+    </actionScript>
+
+    <!-- Additional frame tags (symbolClass, exportAssets, showFrame, etc). -->
+    <frameData totalSize="99">
+      <tag type="symbolClass" size="97" frame="1"/>
+      <tag type="showFrame" size="2" frame="1"/>
+    </frameData>
+  </swf>
+</report>
