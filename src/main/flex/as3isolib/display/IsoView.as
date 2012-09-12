@@ -41,6 +41,8 @@ package as3isolib.display
 	import flash.display.Graphics;
 	import flash.display.Shape;
 	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 	
@@ -55,6 +57,13 @@ package as3isolib.display
 	 */
 	public class IsoView extends Sprite implements IIsoView
 	{
+		protected var isDrag : Boolean = false;
+		protected var _activeMouseScroll : Boolean;
+		
+		protected var lastMouseDown : Pt;
+		protected var lastScreen : Pt;
+		protected var center : Pt;
+		
 		///////////////////////////////////////////////////////////////////////////////
 		//	PRECISION
 		///////////////////////////////////////////////////////////////////////////////
@@ -873,6 +882,59 @@ package as3isolib.display
 				g.lineStyle( 0 );
 				g.drawRect( 0, 0, _w, _h );
 			}
+		}
+		
+		public function disableMouseScroll ( ) : void
+		{
+			_activeMouseScroll = false;
+			
+			removeEventListener ( MouseEvent.MOUSE_DOWN, handlerMouseDown );
+		}
+		
+		public function enableMouseScroll ( ) : void
+		{
+			_activeMouseScroll = true;
+			
+			addEventListener ( MouseEvent.MOUSE_DOWN, handlerMouseDown );
+		}
+		
+		protected function handlerMouseDown(event:MouseEvent):void
+		{
+			if ( ! lastScreen )
+				lastScreen = new Pt ( 0, 0, 0 );
+			
+			lastMouseDown = new Pt ( mouseX, mouseY );
+			isDrag = true;
+			
+			addEventListener ( Event.ENTER_FRAME, handlerEnterFrame );
+			addEventListener ( MouseEvent.MOUSE_UP, handlerMouseUp );
+		}
+		
+		
+		protected function handlerEnterFrame ( event : Event ) : void
+		{
+			if ( ! isDrag )
+				return;
+			
+			var mouse : Pt = new Pt ( mouseX, mouseY );
+			var offset : Pt = IsoMath.screenToIso ( new Pt ( mouse.x - lastMouseDown.x,
+				mouse.y - lastMouseDown.y ) );
+			center = new Pt ( lastScreen.x - offset.x, lastScreen.y - offset.y, lastScreen.z - offset.z );
+			
+			var isoMouse : Pt = localToIso ( mouse );
+			if ( isoMouse.x < 0 || isoMouse.y < 0 )
+				return;
+			centerOnPt ( center, true );
+			
+		}
+		
+		protected function handlerMouseUp(event:MouseEvent):void
+		{
+			removeEventListener ( Event.ENTER_FRAME, handlerEnterFrame );
+			removeEventListener ( MouseEvent.MOUSE_UP, handlerMouseUp );
+			
+			isDrag = true;
+			lastScreen = center;
 		}
 		
 		///////////////////////////////////////////////////////////////////////////////
